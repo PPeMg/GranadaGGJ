@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1db9adedc7c0fb042a26b29b23f54e57, type: 3}
+  m_Name: ProfilesDB
+  m_EditorClassIdentifier: 
+  items:
+  - itemId: 1
+    score: 0
+    name: "Mar\xEDa"
+    avatarId: 0
+    selectedItems: 0300000007000000040000000200000001000000
+  - itemId: 2
+    score: 0
+    name: Yaiza
+    avatarId: 0
+    selectedItems: 020000000900000004000000030000000a000000
+  - itemId: 3
+    score: 0
+    name: Alfonso
+    avatarId: 0
+    selectedItems: 050000000700000001000000020000000b000000
+  - itemId: 4
+    score: 0
+    name: Jaime
+    avatarId: 0
+    selectedItems: 0c00000005000000090000000100000003000000
+  - itemId: 5
+    score: 0
+    name: Antonio
+    avatarId: 0
+    selectedItems: 
+  - itemId: 6
+    score: 0
+    name: Jose
+    avatarId: 0
+    selectedItems: 0700000004000000010000000a00000006000000
