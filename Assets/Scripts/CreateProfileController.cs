@@ -12,11 +12,6 @@ public class CreateProfileController : MonoBehaviour
         createProfileButton = GetComponent<Button>();
         createProfileButton.onClick.AddListener(StartCreateProfile);
     }
-    
-    void Update()
-    {
-        
-    }
 
     public void StartCreateProfile()
     {

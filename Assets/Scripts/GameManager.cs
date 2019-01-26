@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public GameObject[] menus;
+    public Profiles profileDB;
+    public Items itemList;
+    //public Avatars avatarList;
 
     public static GameManager instance;
 
@@ -51,5 +54,16 @@ public class GameManager : MonoBehaviour
                 menus[i].SetActive(false);
             }
         }
+    }
+
+    public void PrintDebug(string objectName)
+    {
+        Debug.Log("This is " + objectName);
+    }
+
+
+    public void ChangeElement(int id, string value)
+    {
+        //profileList.GetItem(id).name = value;
     }
 }
