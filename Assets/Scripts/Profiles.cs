@@ -6,7 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "GameJam/Databases/Profile")]
 public class Profiles : ScriptableObject
 {
-    public List<ProfileItem> items = new List<ProfileItem>();
+    public List<ProfileItem> items;
 
     /// <summary>
     /// Get a item in a item list.

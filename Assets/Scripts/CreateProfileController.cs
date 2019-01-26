@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CreateProfileController : MonoBehaviour
 {
     private Button createProfileButton;
-        
+    
     void Awake()
     {
         createProfileButton = GetComponent<Button>();
@@ -16,5 +16,6 @@ public class CreateProfileController : MonoBehaviour
     public void StartCreateProfile()
     {
         GameManager.instance.SetActiveScreen(1);
+        GameManager.instance.profile = new ProfileItem(); 
     }
 }
