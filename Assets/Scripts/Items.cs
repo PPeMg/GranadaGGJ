@@ -33,6 +33,7 @@ public class Items : ScriptableObject
         if (item!=null)
         {
             item.identifier = lastItem != null ?  lastItem.identifier + 1 : 1;
+
             items.Add(item);
         }
     }
