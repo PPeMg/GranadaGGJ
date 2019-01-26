@@ -14,10 +14,10 @@ public class Items : ScriptableObject
     /// </summary>
     /// <param name="identificador"> Identifier of the item to search. </param>
     /// <returns> The searched item. </returns>
-    public ObjectItem GetItem(int identificador)
+    public ObjectItem GetItem(int identifier)
     {
         ObjectItem returnValue = null;
-        returnValue = items.Find(item => item.itemId == identificador);
+        returnValue = items.Find(item => item.identifier == identifier);
 
         return returnValue;
     }
@@ -32,7 +32,7 @@ public class Items : ScriptableObject
 
         if (item!=null)
         {
-            lastItem != null ? item.itemId = lastItem.itemId + 1 : 1;
+            item.identifier = lastItem != null ?  lastItem.identifier + 1 : 1;
             items.Add(item);
         }
     }
@@ -58,7 +58,7 @@ public class Items : ScriptableObject
 [System.Serializable]
 public class ObjectItem
 {
-    public int itemId;
+    public int identifier;
     public string nameItem; 
 }
 

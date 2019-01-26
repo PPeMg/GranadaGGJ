@@ -13,11 +13,11 @@ public class Profiles : ScriptableObject
     /// </summary>
     /// <param name="identificador"> Identifier of the item to search. </param>
     /// <returns> The searched item. </returns>
-    public ProfileItem GetItem(int identificador)
+    public ProfileItem GetItem(int identifier)
     {
         ProfileItem returnValue = null;
 
-        returnValue = items.Find(item => item.itemId == identificador);
+        returnValue = items.Find(item => item.itemId == identifier);
 
         return returnValue;
     }
@@ -32,7 +32,7 @@ public class Profiles : ScriptableObject
 
         if (item != null)
         {
-            lastItem != null ? item.itemId = lastItem.itemId + 1 : 1;
+            item.itemId = lastItem != null ? lastItem.itemId + 1 : 1;
             items.Add(item);
         }
     }
@@ -48,6 +48,18 @@ public class Profiles : ScriptableObject
             items.Remove(item);
         }
     }
+
+    /// <summary>
+    /// Check if the selected item is a selected correct.    
+    /// </summary>
+    /// <param name="idItemSelected"> Selected item.</param>
+    /// <returns> True if the </returns>
+    public bool IsCorrect(int idItemSelected, ProfileItem profile)
+    {
+        bool result = profile.selectedItems.Contains(idItemSelected);      
+
+        return result; 
+    }
 }
 
 /// <summary>
@@ -60,5 +72,5 @@ public class ProfileItem
     public int score; 
     public string name;
     public int avatarId;
-    public int[] selectedItems;
+    public List<int> selectedItems = new List<int>();
 }
