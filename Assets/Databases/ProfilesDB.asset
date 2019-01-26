@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1db9adedc7c0fb042a26b29b23f54e57, type: 3}
+  m_Name: ProfilesDB
+  m_EditorClassIdentifier: 
+  items:
+  - identificador: 1
+    name: "Mar\xEDa"
+    avatarId: 0
+    selectedItems: 
+  - identificador: 2
+    name: Yaiza
+    avatarId: 0
+    selectedItems: 
+  - identificador: 3
+    name: Alfonso
+    avatarId: 0
+    selectedItems: 
+  - identificador: 4
+    name: Jaime
+    avatarId: 0
+    selectedItems: 
+  - identificador: 5
+    name: Antonio
+    avatarId: 0
+    selectedItems: 
+  - identificador: 6
+    name: Jose
+    avatarId: 0
+    selectedItems: 
