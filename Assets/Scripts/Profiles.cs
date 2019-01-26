@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "User/Databases/Profile")]
 public class Profiles : MonoBehaviour
 {
     // Start is called before the first frame update
