@@ -60,15 +60,15 @@ public class Profiles : ScriptableObject
     }
 
     /// <summary>
-    /// Set name
+    /// Set name's user. 
     /// </summary>
-    /// <param name="id"></param>
-    /// <param name="newName"></param>
+    /// <param name="id"> Identifier's user. </param>
+    /// <param name="newName"> New name. </param>
     public void SetName(int id, string newName)
     {
         this.GetItem(id).name = newName; 
     }
-
+    
     /// <summary>
     /// Set the score of a user. 
     /// </summary>
@@ -79,6 +79,11 @@ public class Profiles : ScriptableObject
         this.GetItem(id).score = newScore;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="id"></param>
+    /// <param name="newSelectedItem"></param>
     public void AddSelectedItem(int id, int newSelectedItem)
     {
         this.GetItem(id).selectedItems.Add(newSelectedItem); 
