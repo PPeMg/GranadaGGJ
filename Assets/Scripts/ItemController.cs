@@ -32,7 +32,8 @@ public class ItemController : MonoBehaviour
 
     public void Click()
     {
-        selected = GameManager.instance.AddSelectedItem(id); 
+        selected = GameManager.instance.AddSelectedItem(id);
+        GameObject.Find("PreferencesSelected").GetComponent<PreferencesSelectedController>().RefreshSelectedItems();
         //GameManager.instance.profile.avatarId = this.id;
         Debug.Log("Pulsado Preferencia con ID: " + this.id);
     }
