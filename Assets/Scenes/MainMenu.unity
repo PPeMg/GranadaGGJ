@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1354,7 +1354,8 @@ MonoBehaviour:
   - {fileID: 2045321147}
   - {fileID: 1535715555}
   - {fileID: 1424235471}
-  profileList: {fileID: 11400000, guid: 200e9833f735109489b5d6286c10e8a1, type: 2}
+  profileDB: {fileID: 0}
+  itemList: {fileID: 0}
 --- !u!1001 &630762036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1979,8 +1980,8 @@ GameObject:
   - component: {fileID: 853221212}
   - component: {fileID: 853221211}
   m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
+  m_Name: Value
+  m_TagString: Value
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2272,6 +2273,7 @@ GameObject:
   - component: {fileID: 896728231}
   - component: {fileID: 896728230}
   - component: {fileID: 896728229}
+  - component: {fileID: 896728232}
   m_Layer: 5
   m_Name: ConfirmButton
   m_TagString: Untagged
@@ -2378,6 +2380,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896728227}
   m_CullTransparentMesh: 0
+--- !u!114 &896728232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896728227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5728539e532a60b46820d6d07966e307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  field: {fileID: 0}
+  textBox: 
 --- !u!1001 &986124985
 PrefabInstance:
   m_ObjectHideFlags: 0
