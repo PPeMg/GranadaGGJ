@@ -4,20 +4,20 @@ using System.Linq;
 using UnityEngine;
 using UnityEditor;
 
-[CreateAssetMenu(menuName = "GameJam/Databases/Object")]
-public class Items : ScriptableObject
+[CreateAssetMenu(menuName = "GameJam/Databases/Avatars")]
+public class Avatars : ScriptableObject
 {
-    public List<ObjectItem> items = new List<ObjectItem>();
+    public List<AvatarItem> items = new List<AvatarItem>();
 
     /// <summary>
     /// Get a item in a item list.
     /// </summary>
     /// <param name="identificador"> Identifier of the item to search. </param>
     /// <returns> The searched item. </returns>
-    public ObjectItem GetItem(int identificador)
+    public AvatarItem GetItem(int identificador)
     {
-        ObjectItem returnValue = null;
-        returnValue = items.Find(item => item.itemId == identificador);
+        AvatarItem returnValue = null;
+        returnValue = items.Find(item => item.avatarId == identificador);
 
         return returnValue;
     }
@@ -26,13 +26,13 @@ public class Items : ScriptableObject
     /// Add a item to lists items.
     /// </summary>
     /// <param name="item">Item to add.</param>
-    public void AddItem(ObjectItem item)
+    public void AddItem(AvatarItem item)
     {
-        ObjectItem lastItem = items.Last();
+        AvatarItem lastItem = items.Last();
 
-        if (item!=null)
+        if (item != null)
         {
-            item.itemId = lastItem != null ? lastItem.itemId + 1 : 1;
+            item.avatarId = lastItem != null ? lastItem.avatarId + 1 : 1;
             items.Add(item);
         }
     }
@@ -41,11 +41,11 @@ public class Items : ScriptableObject
     /// Remove a item of a list items. 
     /// </summary>
     /// <param name="item"></param>
-    public void RemoveItem(ObjectItem item)
+    public void RemoveItem(AvatarItem item)
     {
         if (item != null)
         {
-            items.Remove(item); 
+            items.Remove(item);
         }
     }
 
@@ -56,10 +56,10 @@ public class Items : ScriptableObject
 /// The object's characteristics
 /// </summary>
 [System.Serializable]
- public class ObjectItem
+public class AvatarItem
 {
-    public int itemId;
-    public string nameItem; 
+    public int avatarId;
+    public string nameItem;
 }
 
 
