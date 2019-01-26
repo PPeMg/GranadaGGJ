@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEditor;
 
-[CreateAssetMenu(menuName = "User/Databases/Profile")]
-public class Profiles : ScriptableObject
+[CreateAssetMenu(menuName = "Object/Databases/Object")]
+public class Items : ScriptableObject
 {
-    public List<ProfileItem> items = new List<ProfileItem>();
+    public List<ObjectItem> items = new List<ObjectItem>();
 
     /// <summary>
     /// Get a item in a item list.
     /// </summary>
     /// <param name="identificador"> Identifier of the item to search. </param>
     /// <returns> The searched item. </returns>
-    public ProfileItem GetItem(int identificador)
+    public ObjectItem GetItem(int identificador)
     {
-        ProfileItem returnValue = null;
-
+        ObjectItem returnValue = null;
         returnValue = items.Find(item => item.itemId == identificador);
 
         return returnValue;
@@ -26,11 +26,11 @@ public class Profiles : ScriptableObject
     /// Add a item to lists items.
     /// </summary>
     /// <param name="item">Item to add.</param>
-    public void AddItem(ProfileItem item)
+    public void AddItem(ObjectItem item)
     {
-        ProfileItem lastItem = items.Last();
+        ObjectItem lastItem = items.Last();
 
-        if (item != null)
+        if (item!=null)
         {
             lastItem != null ? item.itemId = lastItem.itemId + 1 : 1;
             items.Add(item);
@@ -41,24 +41,25 @@ public class Profiles : ScriptableObject
     /// Remove a item of a list items. 
     /// </summary>
     /// <param name="item"></param>
-    public void RemoveItem(ProfileItem item)
+    public void RemoveItem(ObjectItem item)
     {
         if (item != null)
         {
-            items.Remove(item);
+            items.Remove(item); 
         }
     }
+
+
 }
 
 /// <summary>
-/// The player's characteristics
+/// The object's characteristics
 /// </summary>
 [System.Serializable]
-public class ProfileItem
+public class ObjectItem
 {
     public int itemId;
-    public int score; 
-    public string name;
-    public int avatarId;
-    public int[] selectedItems;
+    public string nameItem; 
 }
+
+
