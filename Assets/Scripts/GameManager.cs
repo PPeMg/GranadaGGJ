@@ -9,12 +9,17 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        for (int i = 1; i < menus.Length; i++)
-        {
-            menus[i].SetActive(false);
-        }
+        //for (int i = 1; i < menus.Length; i++)
+        //{
+        //    menus[i].SetActive(false);
+        //}
+
+        menus[0].SetActive(false);
+        menus[1].SetActive(true);
+        menus[2].SetActive(false);
+
     }
-    
+
     void Start()
     {
         //StartCoroutine(Wait(5));

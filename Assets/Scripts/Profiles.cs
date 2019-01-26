@@ -54,7 +54,7 @@ public class Profiles : ScriptableObject
 /// The player's characteristics
 /// </summary>
 [System.Serializable]
-public class ProfileItem
+public class ProfileItem    
 {
     public int itemId;
     public int score; 
