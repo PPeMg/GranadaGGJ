@@ -44,6 +44,32 @@ public class GameManager : MonoBehaviour
         yield return null;
     }
 
+    /// <summary>
+    /// Add the selected item to profile. 
+    /// </summary>
+    /// <param name="selectedItem"> Selected item to add. </param>
+    /// <returns> True if the selectedItem is inserted. </returns>
+    public bool  AddSelectedItem(int selectedItem)
+    {
+        bool inserted = default(bool);
+        if(profile.selectedItems.Count<5)
+        {
+            profile.selectedItems.Add(selectedItem);
+            inserted = true; 
+        }
+        else
+        {
+            inserted = false;
+            Debug.Log("Lista de preferencias completa.");
+        }
+
+        return inserted; 
+    }
+
+    /// <summary>
+    /// Set the active screen.
+    /// </summary>
+    /// <param name="index"> Index of the screen to active. </param>
     public void SetActiveScreen(int index)
     {
         for(int i = 0; i < menus.Length; i++)
@@ -62,7 +88,6 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("This is " + objectName);
     }
-
 
     public void ChangeElement(int id, string value)
     {
