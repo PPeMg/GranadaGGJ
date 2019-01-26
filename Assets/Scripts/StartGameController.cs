@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StartGameController : MonoBehaviour
@@ -16,7 +17,8 @@ public class StartGameController : MonoBehaviour
     public void StartCreateProfile()
     {
         //GameManager.instance.SetActiveScreen(1);
-        GameManager.instance.PrintDebug(this.name);
+        //GameManager.instance.PrintDebug(this.name);
         //GameManager.instance.ChangeElement(1, "TEST  DE CAMBIO");
+        SceneManager.LoadScene("MainGame");
     }
 }
