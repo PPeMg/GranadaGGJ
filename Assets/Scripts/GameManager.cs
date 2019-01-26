@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+
         // This make it a Singleton
         if (instance == null) {
             instance = this;
@@ -23,7 +24,7 @@ public class GameManager : MonoBehaviour
 
         SetActiveScreen(0);
     }
-    
+
     void Start()
     {
         //StartCoroutine(Wait(5));

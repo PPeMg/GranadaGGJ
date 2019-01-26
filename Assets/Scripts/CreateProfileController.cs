@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CreateProfileController : MonoBehaviour
 {
     private Button createProfileButton;
-    
+        
     void Awake()
     {
         createProfileButton = GetComponent<Button>();

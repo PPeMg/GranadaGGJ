@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "User/Databases/Profile")]
+[CreateAssetMenu(menuName = "GameJam/Databases/Profile")]
 public class Profiles : ScriptableObject
 {
     public List<ProfileItem> items = new List<ProfileItem>();
@@ -48,17 +48,52 @@ public class Profiles : ScriptableObject
             items.Remove(item);
         }
     }
+
+    /// <summary>
+    /// Get the user's score.
+    /// </summary>
+    /// <param name="identifier"> Identifier's user to get.</param>
+    /// <returns> The score.</returns>
+    public int getScore(int identifier)
+    {
+        return this.GetItem(identifier).score; 
+    }
+
+    /// <summary>
+    /// Set name
+    /// </summary>
+    /// <param name="id"></param>
+    /// <param name="newName"></param>
+    public void setName(int id, string newName)
+    {
+        this.GetItem(id).name = newName; 
+    }
+
+    /// <summary>
+    /// Set the score of a user. 
+    /// </summary>
+    /// <param name="id"> The identifier's user. </param>
+    /// <param name="newScore"> The new score. </param>
+    public void setScore(int id, int newScore)
+    {
+        this.GetItem(id).score = newScore;
+    }
+
+    public void addSelectedItem(int id, int newSelectedItem)
+    {
+        this.GetItem(id).selectedItems.Add(newSelectedItem); 
+    }
 }
 
 /// <summary>
 /// The player's characteristics
 /// </summary>
 [System.Serializable]
-public class ProfileItem
+public class ProfileItem    
 {
     public int itemId;
     public int score; 
     public string name;
     public int avatarId;
-    public int[] selectedItems;
+    public List<int> selectedItems = new List<int>();
 }
