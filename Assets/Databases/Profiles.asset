@@ -12,4 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1db9adedc7c0fb042a26b29b23f54e57, type: 3}
   m_Name: Profiles
   m_EditorClassIdentifier: 
-  items: []
+  items:
+  - identificador: 0
+    name: 
+    avatarId: 0
+    selectedItems: 
+  - identificador: 0
+    name: 
+    avatarId: 0
+    selectedItems: 
+  - identificador: 0
+    name: 
+    avatarId: 0
+    selectedItems: 
+  - identificador: 0
+    name: 
+    avatarId: 0
+    selectedItems: 
+  - identificador: 0
+    name: 
+    avatarId: 0
+    selectedItems: 
