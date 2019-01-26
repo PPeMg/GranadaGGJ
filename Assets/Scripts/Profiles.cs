@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "User/Databases/Profile")]
@@ -19,6 +20,33 @@ public class Profiles : ScriptableObject
         returnValue = items.Find(item => item.itemId == identificador);
 
         return returnValue;
+    }
+
+    /// <summary>
+    /// Add a item to lists items.
+    /// </summary>
+    /// <param name="item">Item to add.</param>
+    public void AddItem(ProfileItem item)
+    {
+        ProfileItem lastItem = items.Last();
+
+        if (item != null)
+        {
+            lastItem != null ? item.itemId = lastItem.itemId + 1 : 1;
+            items.Add(item);
+        }
+    }
+
+    /// <summary>
+    /// Remove a item of a list items. 
+    /// </summary>
+    /// <param name="item"></param>
+    public void RemoveItem(ProfileItem item)
+    {
+        if (item != null)
+        {
+            items.Remove(item);
+        }
     }
 }
 
