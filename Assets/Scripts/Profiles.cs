@@ -54,7 +54,7 @@ public class Profiles : ScriptableObject
     /// </summary>
     /// <param name="identifier"> Identifier's user to get.</param>
     /// <returns> The score.</returns>
-    public int getScore(int identifier)
+    public int GetScore(int identifier)
     {
         return this.GetItem(identifier).score; 
     }
@@ -64,7 +64,7 @@ public class Profiles : ScriptableObject
     /// </summary>
     /// <param name="id"></param>
     /// <param name="newName"></param>
-    public void setName(int id, string newName)
+    public void SetName(int id, string newName)
     {
         this.GetItem(id).name = newName; 
     }
@@ -74,12 +74,12 @@ public class Profiles : ScriptableObject
     /// </summary>
     /// <param name="id"> The identifier's user. </param>
     /// <param name="newScore"> The new score. </param>
-    public void setScore(int id, int newScore)
+    public void SetScore(int id, int newScore)
     {
         this.GetItem(id).score = newScore;
     }
 
-    public void addSelectedItem(int id, int newSelectedItem)
+    public void AddSelectedItem(int id, int newSelectedItem)
     {
         this.GetItem(id).selectedItems.Add(newSelectedItem); 
     }
