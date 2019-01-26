@@ -7,10 +7,10 @@ public class CreateProfileController : MonoBehaviour
 {
     private Button createProfileButton;
     
-    void Start()
+    void Awake()
     {
         createProfileButton = GetComponent<Button>();
-        createProfileButton.onClick.AddListener(() => PrintMessage("Test"));
+        createProfileButton.onClick.AddListener(StartCreateProfile);
     }
     
     void Update()
@@ -18,8 +18,8 @@ public class CreateProfileController : MonoBehaviour
         
     }
 
-    public void PrintMessage(string message)
+    public void StartCreateProfile()
     {
-        Debug.Log(message);
+        GameManager.instance.SetActiveScreen(1);
     }
 }
