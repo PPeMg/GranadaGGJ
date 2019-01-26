@@ -11,17 +11,7 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-<<<<<<< HEAD
-        //for (int i = 1; i < menus.Length; i++)
-        //{
-        //    menus[i].SetActive(false);
-        //}
 
-        menus[0].SetActive(false);
-        menus[1].SetActive(true);
-        menus[2].SetActive(false);
-
-=======
         // This make it a Singleton
         if (instance == null) {
             instance = this;
@@ -30,7 +20,6 @@ public class GameManager : MonoBehaviour
         }
 
         SetActiveScreen(0);
->>>>>>> 162fc048ab6fa10ade904c8280a678fe38f6ad51
     }
 
     void Start()
