@@ -13,27 +13,33 @@ MonoBehaviour:
   m_Name: ProfilesDB
   m_EditorClassIdentifier: 
   items:
-  - identificador: 1
+  - itemId: 1
+    score: 0
     name: "Mar\xEDa"
     avatarId: 0
-    selectedItems: 
-  - identificador: 2
+    selectedItems: 0300000007000000040000000200000001000000
+  - itemId: 2
+    score: 0
     name: Yaiza
     avatarId: 0
-    selectedItems: 
-  - identificador: 3
+    selectedItems: 020000000900000004000000030000000a000000
+  - itemId: 3
+    score: 0
     name: Alfonso
     avatarId: 0
-    selectedItems: 
-  - identificador: 4
+    selectedItems: 050000000700000001000000020000000b000000
+  - itemId: 4
+    score: 0
     name: Jaime
     avatarId: 0
-    selectedItems: 
-  - identificador: 5
+    selectedItems: 0c00000005000000090000000100000003000000
+  - itemId: 5
+    score: 0
     name: Antonio
     avatarId: 0
     selectedItems: 
-  - identificador: 6
+  - itemId: 6
+    score: 0
     name: Jose
     avatarId: 0
-    selectedItems: 
+    selectedItems: 0700000004000000010000000a00000006000000
