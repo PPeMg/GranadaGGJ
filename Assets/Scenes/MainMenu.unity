@@ -1072,13 +1072,13 @@ MonoBehaviour:
   - {fileID: 1424235471}
   profileDB: {fileID: 11400000, guid: 200e9833f735109489b5d6286c10e8a1, type: 2}
   itemList: {fileID: 11400000, guid: c5224abe650064549b0594c49a604224, type: 2}
+  avatarList: {fileID: 11400000, guid: 6134a21e61730534da585f2cb46338b5, type: 2}
   profile:
     itemId: 0
     score: 0
     name: 
     avatarId: 0
     selectedItems: 
-  avatarList: {fileID: 11400000, guid: 6134a21e61730534da585f2cb46338b5, type: 2}
 --- !u!1 &631692238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,6 +1207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 632250412}
   - component: {fileID: 632250413}
+  - component: {fileID: 632250414}
   m_Layer: 5
   m_Name: Preferences
   m_TagString: Untagged
@@ -1269,6 +1270,20 @@ MonoBehaviour:
   m_Spacing: {x: 15, y: 15}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &632250414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632250411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1d325f05fe5a2f4483cc2bcc9a12f3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemPrefab: {fileID: 8601460112230264721, guid: ba244deba4518a94495d07a8649b3b1f,
+    type: 3}
 --- !u!1 &679348165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1561,7 +1576,7 @@ GameObject:
   - component: {fileID: 853221212}
   - component: {fileID: 853221211}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3644,7 +3659,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1535715556
 RectTransform:
   m_ObjectHideFlags: 0

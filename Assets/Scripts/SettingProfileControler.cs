@@ -27,6 +27,8 @@ public class SettingProfileControler : MonoBehaviour
     public void SaveProfile()
     {
         GameManager.instance.profile.name = textBox.text;
+        GameManager.instance.profile.avatarId = GameObject.Find("AvatarMenu").GetComponent<AvatarMenuController>().GetSelectedAvatar();
         Debug.Log(GameManager.instance.profile.name);
+        GameManager.instance.SetActiveScreen(2);
     }
 }

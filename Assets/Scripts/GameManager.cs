@@ -8,9 +8,9 @@ public class GameManager : MonoBehaviour
     public GameObject[] menus;
     public Profiles profileDB;
     public Items itemList;
+    public Avatars avatarList;
 
     public ProfileItem profile; 
-    public Avatars avatarList;
 
     public static GameManager instance;
 

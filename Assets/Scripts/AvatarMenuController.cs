@@ -30,4 +30,33 @@ public class AvatarMenuController : MonoBehaviour
             Debug.Log("NullReferenceException: " + ex.Message);
         }
     }
+
+    public void SelectAvatar(int id)
+    {
+        foreach (AvatarController avatar in this.transform.GetComponentsInChildren<AvatarController>())
+        {
+            if(avatar.GetID() == id)
+            {
+                avatar.SetSelected(true);
+            } else
+            {
+                avatar.SetSelected(false);
+            }
+        }
+    }
+
+    public int GetSelectedAvatar()
+    {
+        int selectedID = -1;
+
+        foreach(AvatarController avatar in GetComponentsInChildren<AvatarController>())
+        {
+            if (avatar.IsSelected())
+            {
+                selectedID = avatar.GetID();
+            }
+        }
+
+        return selectedID;
+    }
 }
