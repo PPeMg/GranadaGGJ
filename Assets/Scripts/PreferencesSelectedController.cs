@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PreferencesSelectedController : MonoBehaviour
 {
@@ -29,8 +30,10 @@ public class PreferencesSelectedController : MonoBehaviour
                 if (itemList.IndexOf(item.itemId) != -1)
                 {
                     GameObject instance = Instantiate(itemPrefab, this.transform);
+                    Image[] imageComponents = instance.GetComponentsInChildren<Image>();
 
                     instance.GetComponent<ItemController>().InitItemButton(item.itemId, item.nameItem);
+                    imageComponents[imageComponents.Length - 1].sprite = item.spritePrefab;
                 }
             }
         }

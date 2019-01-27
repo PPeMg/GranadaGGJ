@@ -17,59 +17,59 @@ MonoBehaviour:
     nameItem: Pets
     targetPosition: {x: 0, y: 0, z: 0}
     modelPrefab: {fileID: 100000, guid: 945e4084c6c3ac44d8f136f3ab49d23f, type: 3}
-    spritePrefab: {fileID: 0}
+    spritePrefab: {fileID: 21300000, guid: b1bae42cef2870b40b9f114cdbfbaa0b, type: 3}
   - itemId: 2
     nameItem: Videogames
     targetPosition: {x: 0, y: 0, z: 0}
     modelPrefab: {fileID: 100006, guid: 0b4f81127ff0f284fa6e60ba15f5eff6, type: 3}
-    spritePrefab: {fileID: 0}
+    spritePrefab: {fileID: 21300000, guid: 7e6bf7cdc507303499f370c32978e09a, type: 3}
   - itemId: 3
     nameItem: Books
     targetPosition: {x: 0, y: 0, z: 0}
     modelPrefab: {fileID: 100002, guid: 6cdad0968ef7d2246aeb76d91aff5383, type: 3}
-    spritePrefab: {fileID: 0}
+    spritePrefab: {fileID: 21300000, guid: 963150b7c31d821429b05bab0446c923, type: 3}
   - itemId: 4
     nameItem: Art
     targetPosition: {x: 0, y: 0, z: 0}
     modelPrefab: {fileID: 100016, guid: 893af6e43c717db4cb8d64518ae8211c, type: 3}
-    spritePrefab: {fileID: 0}
+    spritePrefab: {fileID: 21300000, guid: 7397ed326ef66104b977306d0cae7a99, type: 3}
   - itemId: 5
     nameItem: Sport
     targetPosition: {x: 0, y: 0, z: 0}
     modelPrefab: {fileID: 100010, guid: 3f0444f0897901e449f477919333c36f, type: 3}
-    spritePrefab: {fileID: 0}
+    spritePrefab: {fileID: 21300000, guid: ee541aae76726e945be8f6aa7eeefad1, type: 3}
   - itemId: 6
     nameItem: Music
     targetPosition: {x: 0, y: 0, z: 0}
     modelPrefab: {fileID: 0}
-    spritePrefab: {fileID: 0}
+    spritePrefab: {fileID: 21300000, guid: 39a46b9f43d2b9d4b8236a87412f7a59, type: 3}
   - itemId: 7
     nameItem: Teddies
     targetPosition: {x: 0, y: 0, z: 0}
     modelPrefab: {fileID: 0}
-    spritePrefab: {fileID: 0}
+    spritePrefab: {fileID: 21300000, guid: 3ced742acb41a4a409a2b0647ed619c5, type: 3}
   - itemId: 8
     nameItem: Astronomy
     targetPosition: {x: 0, y: 0, z: 0}
     modelPrefab: {fileID: 100012, guid: 7ce47adc589efa14e94e650eb132622a, type: 3}
-    spritePrefab: {fileID: 0}
+    spritePrefab: {fileID: 21300000, guid: a0d4a2f07e96bbf429eed572954f0301, type: 3}
   - itemId: 9
     nameItem: SeriesTV
     targetPosition: {x: 0, y: 0, z: 0}
     modelPrefab: {fileID: 0}
-    spritePrefab: {fileID: 0}
+    spritePrefab: {fileID: 21300000, guid: 6d8c3fa05adc5af48a7599835bb21d3d, type: 3}
   - itemId: 10
     nameItem: TableGames
     targetPosition: {x: 0, y: 0, z: 0}
     modelPrefab: {fileID: 100000, guid: 9dbe57f7d22930343a8c6b91ba6b3390, type: 3}
-    spritePrefab: {fileID: 0}
+    spritePrefab: {fileID: 21300000, guid: 4437cb2bdde6f1945ae1c36bfa5b66b0, type: 3}
   - itemId: 11
     nameItem: Plants
     targetPosition: {x: 0, y: 0, z: 0}
     modelPrefab: {fileID: 0}
-    spritePrefab: {fileID: 0}
+    spritePrefab: {fileID: 21300000, guid: 3f2b0248f980ab042848f7b9d8cc08b7, type: 3}
   - itemId: 12
     nameItem: Cameras
     targetPosition: {x: 0, y: 0, z: 0}
     modelPrefab: {fileID: 0}
-    spritePrefab: {fileID: 0}
+    spritePrefab: {fileID: 21300000, guid: faa875eb2ad83f240b57196ea086d86d, type: 3}

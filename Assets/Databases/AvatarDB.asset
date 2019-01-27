@@ -16,16 +16,16 @@ MonoBehaviour:
   - avatarId: 1
     nameItem: Avatar 1
     modelPrefab: {fileID: 100082, guid: 1e48e0d02183a88459ccdab7eae3d172, type: 3}
-    spritePrefab: {fileID: 0}
+    spritePrefab: {fileID: 21300000, guid: 7eb67cf32a2f46749b86df650a5660d2, type: 3}
   - avatarId: 2
     nameItem: Avatar 2
     modelPrefab: {fileID: 0}
-    spritePrefab: {fileID: 0}
+    spritePrefab: {fileID: 21300000, guid: 981c7d628c7e6dd42b7665506549cdb5, type: 3}
   - avatarId: 3
     nameItem: Avatar 3
     modelPrefab: {fileID: 0}
-    spritePrefab: {fileID: 0}
+    spritePrefab: {fileID: 21300000, guid: ba19b64528992c648b8902aa9afec12c, type: 3}
   - avatarId: 4
     nameItem: Avatar 4
     modelPrefab: {fileID: 0}
-    spritePrefab: {fileID: 0}
+    spritePrefab: {fileID: 21300000, guid: a49d1606f1267ac48a2de2e2b230124f, type: 3}

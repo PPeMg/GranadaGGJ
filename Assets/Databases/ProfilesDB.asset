@@ -58,3 +58,8 @@ MonoBehaviour:
     name: ALFONSO
     avatarId: 2
     selectedItems: 03000000090000000a0000000400000006000000
+  - itemId: 10
+    score: 0
+    name: jUAN
+    avatarId: 1
+    selectedItems: 0400000003000000090000000200000008000000

@@ -1,16 +1,18 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AvatarMenuController : MonoBehaviour
 {
     public GameObject avatarPrefab;
+    public Sprite avatarIconPrefab;
 
     private void OnEnable()
     {
         try
         {
             Avatars avatarModelList = GameManager.instance.avatarList;
-
+            
             foreach (RectTransform child in this.transform)
             {
                 GameObject.Destroy(child.gameObject);
@@ -19,8 +21,10 @@ public class AvatarMenuController : MonoBehaviour
             foreach (AvatarItem avatar in avatarModelList.items)
             {
                 GameObject instance = Instantiate(avatarPrefab, this.transform);
+                Image[] imageComponents = instance.GetComponentsInChildren<Image>();
 
                 instance.GetComponent<AvatarController>().InitAvatarButton(avatar.avatarId, avatar.nameItem);
+                imageComponents[imageComponents.Length -1].sprite = avatar.spritePrefab;
             }
         }
         catch (NullReferenceException ex)
