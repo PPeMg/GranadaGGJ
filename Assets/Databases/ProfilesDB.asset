@@ -43,3 +43,18 @@ MonoBehaviour:
     name: Jose
     avatarId: 0
     selectedItems: 0700000004000000010000000a00000006000000
+  - itemId: 7
+    score: 0
+    name: TESTEO
+    avatarId: 3
+    selectedItems: 03000000080000000a0000000600000005000000
+  - itemId: 8
+    score: 0
+    name: MARIA DEL MAL
+    avatarId: 4
+    selectedItems: 040000000300000002000000010000000c000000
+  - itemId: 9
+    score: 0
+    name: ALFONSO
+    avatarId: 2
+    selectedItems: 03000000090000000a0000000400000006000000
