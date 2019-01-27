@@ -6,7 +6,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: player1
+  m_Name: player1_dead
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Move
@@ -330,4 +330,4 @@ AnimatorStateMachine:
   m_EntryPosition: {x: -300, y: 48, z: 0}
   m_ExitPosition: {x: 1308, y: 96, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 1102190677578067712}
+  m_DefaultState: {fileID: 1102298145362907238}
