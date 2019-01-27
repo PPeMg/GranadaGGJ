@@ -15,25 +15,61 @@ MonoBehaviour:
   items:
   - itemId: 1
     nameItem: Pets
+    targetPosition: {x: 0, y: 0, z: 0}
+    modelPrefab: {fileID: 100000, guid: 945e4084c6c3ac44d8f136f3ab49d23f, type: 3}
+    spritePrefab: {fileID: 0}
   - itemId: 2
     nameItem: Videogames
+    targetPosition: {x: 0, y: 0, z: 0}
+    modelPrefab: {fileID: 100006, guid: 0b4f81127ff0f284fa6e60ba15f5eff6, type: 3}
+    spritePrefab: {fileID: 0}
   - itemId: 3
     nameItem: Books
+    targetPosition: {x: 0, y: 0, z: 0}
+    modelPrefab: {fileID: 100002, guid: 6cdad0968ef7d2246aeb76d91aff5383, type: 3}
+    spritePrefab: {fileID: 0}
   - itemId: 4
     nameItem: Art
+    targetPosition: {x: 0, y: 0, z: 0}
+    modelPrefab: {fileID: 100016, guid: 893af6e43c717db4cb8d64518ae8211c, type: 3}
+    spritePrefab: {fileID: 0}
   - itemId: 5
     nameItem: Sport
+    targetPosition: {x: 0, y: 0, z: 0}
+    modelPrefab: {fileID: 100010, guid: 3f0444f0897901e449f477919333c36f, type: 3}
+    spritePrefab: {fileID: 0}
   - itemId: 6
     nameItem: Music
+    targetPosition: {x: 0, y: 0, z: 0}
+    modelPrefab: {fileID: 0}
+    spritePrefab: {fileID: 0}
   - itemId: 7
     nameItem: Teddies
+    targetPosition: {x: 0, y: 0, z: 0}
+    modelPrefab: {fileID: 0}
+    spritePrefab: {fileID: 0}
   - itemId: 8
     nameItem: Astronomy
+    targetPosition: {x: 0, y: 0, z: 0}
+    modelPrefab: {fileID: 100012, guid: 7ce47adc589efa14e94e650eb132622a, type: 3}
+    spritePrefab: {fileID: 0}
   - itemId: 9
     nameItem: SeriesTV
+    targetPosition: {x: 0, y: 0, z: 0}
+    modelPrefab: {fileID: 0}
+    spritePrefab: {fileID: 0}
   - itemId: 10
     nameItem: TableGames
+    targetPosition: {x: 0, y: 0, z: 0}
+    modelPrefab: {fileID: 100000, guid: 9dbe57f7d22930343a8c6b91ba6b3390, type: 3}
+    spritePrefab: {fileID: 0}
   - itemId: 11
     nameItem: Plants
+    targetPosition: {x: 0, y: 0, z: 0}
+    modelPrefab: {fileID: 0}
+    spritePrefab: {fileID: 0}
   - itemId: 12
     nameItem: Cameras
+    targetPosition: {x: 0, y: 0, z: 0}
+    modelPrefab: {fileID: 0}
+    spritePrefab: {fileID: 0}

@@ -15,9 +15,17 @@ MonoBehaviour:
   items:
   - avatarId: 1
     nameItem: Avatar 1
+    modelPrefab: {fileID: 100082, guid: 1e48e0d02183a88459ccdab7eae3d172, type: 3}
+    spritePrefab: {fileID: 0}
   - avatarId: 2
     nameItem: Avatar 2
+    modelPrefab: {fileID: 0}
+    spritePrefab: {fileID: 0}
   - avatarId: 3
     nameItem: Avatar 3
+    modelPrefab: {fileID: 0}
+    spritePrefab: {fileID: 0}
   - avatarId: 4
     nameItem: Avatar 4
+    modelPrefab: {fileID: 0}
+    spritePrefab: {fileID: 0}

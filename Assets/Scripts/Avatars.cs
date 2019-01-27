@@ -60,6 +60,8 @@ public class AvatarItem
 {
     public int avatarId;
     public string nameItem;
+    public GameObject modelPrefab;
+    public Sprite spritePrefab;
 }
 
 
