@@ -59,7 +59,10 @@ public class Items : ScriptableObject
  public class ObjectItem
 {
     public int itemId;
-    public string nameItem; 
+    public string nameItem;
+    public Vector3 targetPosition;
+    public GameObject modelPrefab;
+    public Sprite spritePrefab;
 }
 
 

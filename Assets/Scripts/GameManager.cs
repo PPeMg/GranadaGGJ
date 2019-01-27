@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
         }
 
         SetActiveScreen(0);
+
+        DontDestroyOnLoad(this);
     }
 
     void Start()
